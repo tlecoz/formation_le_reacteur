@@ -20,6 +20,10 @@ app.all("*", (req, res) => {
   res.status(400).json("Route introuvable");
 });
 
+app.get("/",(req,res)=>{
+  res.json("client connected")
+})
+
 app.listen(process.env.PORT, () => {
   console.log("Server has started ! 🤙");
 });
