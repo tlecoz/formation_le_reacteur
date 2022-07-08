@@ -68,5 +68,3 @@ git push -u origin main
 
 
 
-MONGO= tlecoz / T2WqdcDFxuvdpeVc
-TOKEN_git=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
