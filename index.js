@@ -8,7 +8,9 @@ mongoose.connect(process.env.MONGO_CONNECT);
 
 const app = express();
 app.use(express.json());
-app.use(require("cors"));
+
+const cors = require("cors");
+app.use(cors());
 
 //import des routes users et offers
 const usersRoutes = require("./routes/users");
