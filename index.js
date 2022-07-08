@@ -1,11 +1,14 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 
 //connexion à la bdd
-mongoose.connect("mongodb://localhost/vinted-orion22");
+//mongoose.connect("mongodb://localhost/vinted-orion22");
+mongoose.connect(process.env.MONGO_CONNECT);
 
 const app = express();
 app.use(express.json());
+app.use(require("cors"));
 
 //import des routes users et offers
 const usersRoutes = require("./routes/users");
