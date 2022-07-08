@@ -66,3 +66,7 @@ git push -u origin main
 
    . attention au probleme de token créé en local VS token crée sur la base online quand on test avec postman
 
+
+
+MONGO= tlecoz / T2WqdcDFxuvdpeVc
+TOKEN_git=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
